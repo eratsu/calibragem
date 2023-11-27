@@ -1,0 +1,10 @@
+[
+    {"fabricante": "Yamaha", "modelo": "Fazer", "ano": 2022, "pneu_dianteiro": {"medida": "110/70-17", "calibragem": 32}, "pneu_traseiro": {"medida": "140/70-17", "calibragem": 36}},
+    {"fabricante": "Honda", "modelo": "CB500", "ano": 2021, "pneu_dianteiro": {"medida": "120/70-17", "calibragem": 34}, "pneu_traseiro": {"medida": "160/60-17", "calibragem": 38}},
+    {"fabricante": "Suzuki", "modelo": "GSX-R750", "ano": 2023, "pneu_dianteiro": {"medida": "120/70-17", "calibragem": 36}, "pneu_traseiro": {"medida": "190/50-17", "calibragem": 42}},
+    
+    {"fabricante": "Yamaha", "modelo": "YZF-R1", "ano": 2022, "pneu_dianteiro": {"medida": "120/70-17", "calibragem": 34}, "pneu_traseiro": {"medida": "190/55-17", "calibragem": 38}},
+    {"fabricante": "Honda", "modelo": "CBR1000RR", "ano": 2021, "pneu_dianteiro": {"medida": "120/70-17", "calibragem": 32}, "pneu_traseiro": {"medida": "190/50-17", "calibragem": 36}},
+    {"fabricante": "Suzuki", "modelo": "GSX-S1000", "ano": 2023, "pneu_dianteiro": {"medida": "120/70-17", "calibragem": 36}, "pneu_traseiro": {"medida": "190/55-17", "calibragem": 40}}
+
+]

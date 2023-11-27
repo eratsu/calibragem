@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Calibragem de Pneus</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{margin:0;padding:0;}
+
+        body{
+            background: #161616;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+        }
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .search-form{
+            margin: 30px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .search-form > .search-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        select {
+            background: #313131;
+            color: #fff;
+            padding: 10px 20px;
+            width: 70vw;
+        }
+
+        button{
+            background: rgb(209, 51, 51);
+            color: #fff;
+            border: 0;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            width: 70vw;
+        }
+        .resultado{
+            background: #313131;
+            padding: 10px;
+            width: 70vw;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="title">
+        <h1>Calibragem.com.br</h1>
+        <p>Pesquise a calibragem do seu pneu</p>
+    </div>
+
+    <div class="search-form">
+        <div class="search-option">
+            <label for="fabricanteSelect">Selecione o fabricante:</label>
+            <select id="fabricanteSelect" onchange="carregarModelos()">
+                <option value="">Selecione...</option>
+            </select>
+        </div>
+
+        <div class="search-option">
+            <label for="modeloSelect">Selecione o modelo:</label>
+            <select id="modeloSelect" onchange="carregarAnos()">
+                <option value="">Selecione...</option>
+            </select>
+        </div>
+
+        <div class="search-option">
+            <label for="anoSelect">Selecione o ano:</label>
+            <select id="anoSelect">
+                <option value="">Selecione...</option>
+            </select>
+        </div>
+
+        <button onclick="consultarCalibragem()">Consultar Calibragem</button>
+    </div>
+
+    <div class="resultado">
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
